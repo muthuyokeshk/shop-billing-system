@@ -1,0 +1,65 @@
+SHOP BILLING SYSTEM - SAMPLE RUN
+Tekistic IT Services Pvt Ltd
+Python Fresher Assessment
+
+
+1. PRODUCT LIST
+
+The system displayed the available products with their code, name,
+price, stock, and GST rate.
+
+Sample products:
+P101 - Basmati Rice 1 kg - Rs.120.00 - GST 5%
+P102 - Sunflower Oil 1L - Rs.180.00 - GST 5%
+P103 - Toothpaste 150g - Rs.95.00 - GST 18%
+P104 - Notebook A4 - Rs.60.00 - GST 12%
+P105 - Milk 500ml - Rs.28.00 - GST 0%
+
+
+2. SUCCESSFUL BILL
+
+Customer: Ravi Kumar
+
+Products added:
+P101 - Quantity: 2
+P103 - Quantity: 1
+
+Taxable Value: Rs.335.00
+CGST: Rs.14.55
+SGST: Rs.14.55
+Round-off: -Rs.0.10
+Grand Total: Rs.364
+
+The bill was saved successfully and the stock was reduced.
+
+
+3. INSUFFICIENT STOCK TEST
+
+Product: P105 - Milk 500ml
+Available Stock: 20
+Requested Quantity: 25
+
+Result:
+Insufficient stock.
+
+The requested quantity was rejected and the bill was not created.
+
+
+4. DUPLICATE PRODUCT TEST
+
+Product: P101 was entered multiple times in the same bill.
+
+The system combined the quantities and checked the combined quantity
+against the available stock.
+
+When the combined quantity exceeded available stock, the additional
+quantity was rejected.
+
+
+5. UPDATE STOCK TEST
+
+Product: P101
+
+Additional stock was entered using the Update Stock option.
+
+The system updated the product stock successfully.
